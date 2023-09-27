@@ -1,4 +1,5 @@
 .list-group-item {
+    max-width: 1000px;
     padding: 15px 20px;
     border-bottom: 1px solid #3d5a80;
 }
@@ -11,7 +12,11 @@
     line-height: 35px;
     font-size: 20px;
     cursor: pointer;
-    min-width: 550px;
+}
+
+.list-group-item-right {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .list-group-item input {
