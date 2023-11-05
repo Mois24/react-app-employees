@@ -1,0 +1,10 @@
+@import '../variable.scss';
+
+.app-list {
+    margin-top: $mgTop;
+    padding: $padding;
+    background-color: $main-bgColor;
+    border-radius: $radius;
+    box-shadow: $box;
+    color: $text-color;
+}

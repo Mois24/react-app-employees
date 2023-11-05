@@ -1,5 +1,6 @@
 import { Component } from 'react';
 
+import datum from '../../data/data.json';
 import AppInfo from '../app-info/app-info';
 import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
@@ -9,19 +10,12 @@ import EmployeesAddForm from '../employees-add-form/employees-add-form';
 import './app.css';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            data: [
-                {name: 'Nikola Belotti', salary: 1500, increase: false, rise: false, id: 1},
-                {name: 'Roberto Berardi', salary: 1440, increase: false, rise: true, id: 2},
-                {name: 'Alex Drogba', salary: 1769, increase: false, rise: false, id: 3}
-            ],
-            term: '', 
-            filter: 'all'
-        }
-        this.maxId = 4
+    state = {
+        data: datum,
+        term: '', 
+        filter: 'all'
     }
+    maxId = datum.length + 1;
 
     deleteItem = (id) => {
         this.setState(({data}) => {
@@ -108,7 +102,9 @@ class App extends Component {
             case 'rise':
                 return items.filter(item => item.rise);
             case 'moreThan1500':
-               return items.filter(item => item.salary > 1500);
+               return items.filter(item => item.salary >= 1500);
+            case 'lessThan1500':
+               return items.filter(item => item.salary < 1500);
             default:
                 return items;
         }

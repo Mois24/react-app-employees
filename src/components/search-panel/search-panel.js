@@ -1,13 +1,10 @@
 import { Component } from 'react';
 
-import './search-panel.css';
+import './search-panel.scss';
 
 class SearchPanel extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            term: ''
-        }
+    state = {
+        term: ''
     }
 
     onUpdateSearch = (e) => {
@@ -21,7 +18,7 @@ class SearchPanel extends Component {
             <input
             type='text'
             className='form-control search-input'
-            placeholder='Найти сотрудника'
+            placeholder='Find an employee'
             value={this.state.term}
             onChange={this.onUpdateSearch}/>
         )

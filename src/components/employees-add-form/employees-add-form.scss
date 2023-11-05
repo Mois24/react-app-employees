@@ -1,0 +1,21 @@
+@import '../variable.scss';
+
+.add-form {
+    margin-top: 20px;
+    input {
+        width: 350px;
+        margin-right: 20px;
+    }
+    button {
+        width: 100px;
+    }
+}
+
+.app-add-form {
+    margin-top: $mgTop;
+    padding: $padding;
+    background-color: $main-bgColor;
+    border-radius: $radius;
+    box-shadow: $box;
+    color: $text-color;
+}

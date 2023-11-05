@@ -1,0 +1,9 @@
+[
+    {"name": "Nikola Belotti", "salary": 1500, "increase": false, "rise": false, "id": 1},
+    {"name": "Roberto Berardi", "salary": 1440, "increase": false, "rise": false, "id": 2},
+    {"name": "Santiago Cage", "salary": 890, "increase": false, "rise": false, "id": 3},
+    {"name": "Violetta Porter", "salary": 2188, "increase": false, "rise": true, "id": 4},
+    {"name": "Alex Drogba", "salary": 3770, "increase": false, "rise": false, "id": 5},
+    {"name": "Federico Hamptom", "salary": 1987, "increase": true, "rise": false, "id": 6},
+    {"name": "Maxim Truniti", "salary": 1224, "increase": false, "rise": true, "id": 7}
+]

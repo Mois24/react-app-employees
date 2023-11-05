@@ -1,10 +1,11 @@
-import './app-filter.css';
+import './app-filter.scss';
 
 const AppFilter = (props) => {
     const buttonsData = [
-        {name: 'all', label: 'Все сотрудники'},
-        {name: 'rise', label: 'На повышение'},
-        {name: 'moreThan1500', label: 'З/п больше чем 1500$'}
+        {name: 'all', label: 'All employees'},
+        {name: 'rise', label: 'On promotion'},
+        {name: 'lessThan1500', label: 'Salary less than 1500$'},
+        {name: 'moreThan1500', label: 'Salary more than 1500$'}
     ];
 
     const buttons = buttonsData.map(({name, label}) => {
